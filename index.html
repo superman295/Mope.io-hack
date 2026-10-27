@@ -3,19 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aula 13 — Desafio: Painel administrativo</title>
+  <title>Aula 13 — Desafio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app">
-    <header class="topbar"><a class="logo" href="#inicio">LOGO</a><nav aria-label="Menu superior"><a href="#inicio">Home</a><a href="#perfil">Perfil</a><a href="#sair">Sair</a></nav></header>
+  <section class="cards-demo" id="inicio" aria-labelledby="cards-title">
+    <h1 id="cards-title">Desafio — Cards com Flexbox</h1>
+    <div class="demo-cards">
+      <article class="demo-card">
+        <h2>Título 1</h2>
+        <p>Este é um exemplo de texto para o card. Conteúdo simples para demonstração.</p>
+        <a class="button" href="#painel">Saiba mais</a>
+      </article>
+      <article class="demo-card">
+        <h2>Título 2</h2>
+        <p>Outro exemplo de conteúdo para mostrar como os cards funcionam.</p>
+        <a class="button" href="#painel">Saiba mais</a>
+      </article>
+      <article class="demo-card">
+        <h2>Título 3</h2>
+        <p>Mais um card com conteúdo de exemplo para completar o layout.</p>
+        <a class="button" href="#painel">Saiba mais</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="admin-app" id="painel" aria-labelledby="panel-title">
+    <header class="topbar">
+      <a class="logo" href="#inicio">LOGO</a>
+      <nav aria-label="Menu superior"><a href="#inicio">Home</a><a href="#perfil">Perfil</a><a href="#sair">Sair</a></nav>
+    </header>
     <div class="layout">
-      <aside class="sidebar"><h2>Menu</h2><nav aria-label="Navegação lateral"><a href="#dashboard">Dashboard</a><a href="#usuarios">Usuários</a><a href="#relatorios">Relatórios</a><a href="#configuracoes">Configurações</a></nav></aside>
-      <main class="content" id="dashboard"><h1>Painel administrativo</h1><section class="cards" aria-label="Resumo do sistema">
-        <article class="card">Card 1</article><article class="card">Card 2</article><article class="card">Card 3</article><article class="card">Card 4</article><article class="card card-wide">Card 5</article><article class="card card-wide">Card 6</article>
-      </section></main>
+      <aside class="sidebar">
+        <nav aria-label="Navegação lateral"><a href="#painel">Dashboard</a><a href="#usuarios">Usuários</a><a href="#relatorios">Relatórios</a><a href="#configuracoes">Configurações</a></nav>
+      </aside>
+      <main class="content">
+        <h2 id="panel-title">Painel administrativo</h2>
+        <section class="panel-cards" aria-label="Resumo do sistema">
+          <article class="panel-card">Card 1</article><article class="panel-card">Card 2</article><article class="panel-card">Card 3</article><article class="panel-card">Card 4</article>
+          <article class="panel-card wide">Card 5</article><article class="panel-card wide">Card 6</article>
+        </section>
+      </main>
     </div>
     <footer>© 2026 - Sistema Web</footer>
-  </div>
+  </section>
 </body>
 </html>
